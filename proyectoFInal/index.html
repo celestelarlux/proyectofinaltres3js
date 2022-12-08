@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="pieces paint">
+  <meta name="author" content="">
+  <title>DeskArt
+  </title>
+  <!-- Bootstrap Core CSS-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!-- Custom CSS-->
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle"><span
+            class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
+            class="icon-bar"></span></button><a href="index.html" class="navbar-brand page-scroll">
+          <!-- Img or text logo--><img src="img/logo.png" alt="" class="logo"></a>
+      </div>
+      <div class="collapse navbar-collapse navbar-main-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Shop</a></li>
+          <li class="menu-divider visible-lg">&nbsp;</li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle"><i class="fa fa-search fa-lg"></i><span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <form class="search-form">
+                  <button id="buttonSearch" title="Search" class="search-button"><i class="fa fa-search fa-lg"></i></button>
+                  <input id="search"type="text" placeholder="SEARCH" class="form-control search-field">
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li id="toCart"class="dropdown"><a href="#" class="dropdown-toggle"><i class="fa fa-shopping-bag fa-lg"></i><span id="quantityCart"
+                class="badge"></span><span class="caret"></span></a>
+            <ul id="cart"class="dropdown-menu">
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header-->
+  <div id="content">
+  <header data-background="img/shop/header2.jpg" class="intro introhalf">
+    <!-- Intro Header-->
+    <div class="intro-body">
+      <h1>Shop</h1>
+      <h4>YOUR ART STORE</h4>
+    </div>
+  </header>
+  <!-- shop Block-->
+  <section id="shop" class="section-small">
+    <div class="container">
+      <select id="select" class="input-lg sorting pull-left">
+        <option>DEFAULT SORTING</option>
+        <option>PRICE: LOW TO HIGH</option>
+        <option>PRICE: HIGH TO LOW</option>
+      </select>
+      <div class="clearfix"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row grid-pad">
+            <div class="col-md-8 text-center">
+              <div id="products" class="row">
+              </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+              <h4>search</h4>
+              <form class="form-inline subscribe-form">
+                <div class="input-group input-group-lg">
+                  <input id="search2" type="search" name="search" placeholder="Search..." class="form-control"><span
+                    class="input-group-btn">
+                    <button id="buttonSearch2" name="search" class="btn btn-dark"><i
+                        class="fa fa-search fa-lg"></i></button></span>
+                </div>
+              </form>
+              <h4>categories</h4>
+              <ul class="list-unstyled">
+                <li id="realism">Realism</li>
+                <li id="surealism">Surealism</li>
+                <li id="animation">Animation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <!-- Action Section-->
+  <div class="section action section-small bg-gray2">
+    <div class="container wow fadeIn">
+      <div class="row">
+        <div class="col-sm-2"><i class="fa fa-cc-visa fa-3x"></i></div>
+        <div class="col-sm-2"><i class="fa fa-cc-mastercard fa-3x"></i></div>
+        <div class="col-sm-2"><i class="fa fa-cc-amex fa-3x"></i></div>
+        <div class="col-sm-2"><i class="fa fa-cc-diners-club fa-3x"></i></div>
+        <div class="col-sm-2"><i class="fa fa-cc-discover fa-3x"></i></div>
+        <div class="col-sm-2"><i class="fa fa-cc-jcb fa-3x"></i></div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section-->
+  <section class="footer bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>About</h3>
+          <p>website e-commerce.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Why us</h3>
+          <p>ELorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis pulvinar vestibulum. Donec
+            eleifend, sem dictum.</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact</h3>
+          <p><i class="fa fa-phone fa-fw"></i> (123) 456-7890 <br> <i class="fa fa-envelope fa-fw"></i><br> <i
+              class="fa fa-map-marker fa-fw"></i>Lorem ipsum 3245
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li><a href="#"><i class="fa fa-twitter fa-fw fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook fa-fw fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus fa-fw fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin fa-fw fa-lg"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <p class="small">TEMPLATE BY<i class="fa fa-heart fa-fw"></i> Celeste</p>
+        </div>
+        <div class="col-md-3">
+          <p class="small">&copy;2021 Celeste</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Core JavaScript-->
+  <script type="module" src="js/main.js"></script>
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>
